@@ -61,7 +61,7 @@ class Adapter(val dProds: MutableList<DummyProduct>) : RecyclerView.Adapter<Adap
             binding.iconItem.clipToOutline = true
             binding.iconItem.setImageResource(dProds.get(position).image)
             binding.nameText.setText(dProds.get(position).name)
-            binding.descriptionText.setText(dProds.get(position).description)
+            binding.addressText.setText(dProds.get(position).address)
             binding.priceText.text = price
             binding.chatIntText.setText(dProds.get(position).chat.toString())
             binding.heartIntText.setText(dProds.get(position).like.toString())

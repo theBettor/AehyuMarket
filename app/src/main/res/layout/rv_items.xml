@@ -43,7 +43,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/descriptionText"
+        android:id="@+id/addressText"
         android:layout_width="200dp"
         android:layout_height="25dp"
         android:layout_marginStart="10dp"
@@ -83,7 +83,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.142"
         app:layout_constraintStart_toEndOf="@+id/iconItem"
-        app:layout_constraintTop_toBottomOf="@+id/descriptionText" />
+        app:layout_constraintTop_toBottomOf="@+id/addressText" />
 
     <ImageView
         android:id="@+id/chatimageView"
