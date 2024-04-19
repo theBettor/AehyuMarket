@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/iconItem"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/imageviewborder"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hate"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/transparent"
+        android:maxLines="2"
+        android:gravity="left|top"
+        android:ellipsize="end"
+        android:ems="10"
+        android:textSize="16dp"
+        android:text="hi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toEndOf="@+id/iconItem"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/transparent"
+        android:ellipsize="end"
+        android:ems="10"
+        android:gravity="top|left"
+        android:lineSpacingExtra="2sp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:editable="false"
+        android:text="hi"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toEndOf="@+id/iconItem"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLines="1"
+        android:gravity="top|left"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:text="hi"
+        android:textSize="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toEndOf="@+id/iconItem"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionText" />
+
+    <ImageView
+        android:id="@+id/chatimageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/bubble_chat"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/chatIntText"
+        app:layout_constraintTop_toTopOf="@+id/chatIntText"
+        app:layout_constraintBottom_toBottomOf="@id/chatIntText"
+        app:srcCompat="@drawable/hate" />
+
+    <ImageView
+        android:id="@+id/heartView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="2dp"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        android:src="@drawable/heart"
+        app:layout_constraintBottom_toBottomOf="@+id/heartIntText"
+        app:layout_constraintEnd_toStartOf="@+id/heartIntText"
+        app:layout_constraintTop_toTopOf="@+id/heartIntText"
+        app:srcCompat="@drawable/hate" />
+
+    <TextView
+        android:id="@+id/chatIntText"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="2dp"
+        android:text="TextView"
+        android:gravity="center|fill_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/heartView"
+        app:layout_constraintEnd_toStartOf="@+id/heartView"
+        app:layout_constraintTop_toTopOf="@+id/heartView" />
+
+    <TextView
+        android:id="@+id/heartIntText"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="TextView"
+        android:gravity="center|fill_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
